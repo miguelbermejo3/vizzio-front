@@ -1,0 +1,53 @@
+:host {
+    display: block;
+  }
+  
+  ion-header {
+    --background: #333;
+    --color: white;
+  }
+  
+  ion-content {
+    --background: #f0f0f0;
+  }
+  
+  ion-toolbar {
+    --background: #333;
+    --color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 16px;
+    color: #333;
+  }
+  
+  div {
+    padding: 16px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+    border-radius: 8px;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .rrpp {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  ion-button {
+    --background: #3880ff;
+    --color: white;
+  }
+  

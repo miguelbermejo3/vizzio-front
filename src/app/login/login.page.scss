@@ -1,0 +1,47 @@
+ion-content {
+    --background: #ffffff; /* Fondo blanco para el contenido */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .login-card {
+    max-width: 350px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .btn-login {
+    margin-top: 20px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .cuerpo {
+    --ion-background-color: #f2f2f2;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .label-email, .label-password {
+    transition: all 0.3s ease-out;
+  }
+  
+  .ion-focused .label-email,
+  .ion-focused .label-password {
+    transform: translateY(-22px) scale(0.8);
+    color: var(--ion-color-primary);
+  }
+  .titulo{
+    text-align: center;
+  }

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Iniciar sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="cuerpo">
+  <div class="login-container">
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title>Iniciar sesión</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item lines="none">
+          <div class="input-wrapper">
+            <ion-label position="floating" class="label-email">Correo electrónico</ion-label>
+            <ion-input type="email" [(ngModel)]="email" (ionFocus)="onInputFocus($event)" (ionBlur)="onInputBlur($event)"></ion-input>
+          </div>
+        </ion-item>
+
+        <ion-item lines="none">
+          <div class="input-wrapper">
+            <ion-label position="floating" class="label-password">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="password" (ionFocus)="onInputFocus($event)" (ionBlur)="onInputBlur($event)"></ion-input>
+          </div>
+        </ion-item>
+
+        <ion-button expand="block" color="primary" class="btn-login" (click)="login()">Iniciar sesión</ion-button>
+      </ion-card-content>
+      <div class="registro">
+        <p>¿Aún no tienes cuenta? <a routerLink="/registro">Regístrate aquí</a></p>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

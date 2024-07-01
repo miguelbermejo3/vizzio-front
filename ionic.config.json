@@ -1,0 +1,7 @@
+{
+  "name": "vizzio",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

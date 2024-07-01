@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab-eventos/tab-detalles"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Comprar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="contentToConvert">
+    <h2>Compra de Boletos</h2>
+    <!-- Formulario para completar la compra -->
+    <form>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre" name="nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input type="text" [(ngModel)]="apellido" name="apellido"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>RRPP</ion-label>
+        <ion-select [(ngModel)]="rrpp" name="rrpp">
+          <!-- Opciones para RRPP -->
+          <ion-select-option value="opcion1">Opción 1</ion-select-option>
+          <ion-select-option value="opcion2">Opción 2</ion-select-option>
+          <ion-select-option value="opcion3">Opción 3</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nº personas</ion-label>
+        <ion-input type="number" [(ngModel)]="numPersonas"  name="numPersonas"></ion-input>
+      </ion-item>
+
+      <ion-button type="button" (click)="generateQRCode()" expand="block">Generar QR</ion-button>
+    </form>
+    <!-- Fin del formulario -->
+  </div>
+
+  <!-- Mostrar el código QR generado -->
+  <div *ngIf="qrCodeData" class="qr-container">
+    <img [src]="'data:image/jpeg;base64,' + qrCodeData" alt="QR Code">
+  </div>
+</ion-content>

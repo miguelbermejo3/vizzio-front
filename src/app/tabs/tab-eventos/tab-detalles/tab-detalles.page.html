@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab-eventos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles del Evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h2>Detalles del Evento</h2>
+    <img [src]="'../../../assets/images/' + eventImg" alt="{{ eventNombre }}">
+    <p>Fecha: {{ eventFecha }}</p>
+    <p>Nombre: {{ eventNombre }}</p>
+  </div>
+  <div class="rrpp">
+    <ion-button [routerLink]="['/tabs/tab-eventos/tab-detalles/tab-comprar', eventId, eventImg, eventFecha, eventNombre]">Comprar</ion-button>
+  </div>
+</ion-content>

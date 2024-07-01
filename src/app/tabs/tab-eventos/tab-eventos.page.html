@@ -1,0 +1,30 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title>ESTA SEMANA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Eventos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="events-container">
+    <ion-item button [routerLink]="['/tabs/tab-eventos/tab-detalles', 'jueves', 'jueves.jpg', 'JUE. 27 JUN.', 'VIZZIO']" class="event-card">
+      <div class="event-date">JUE. 27 JUN.</div>
+      <div class="event-info">
+        <img src="../../../assets/images/jueves.jpg" alt="Event 1">
+        <div>VIZZIO</div>
+      </div>
+    </ion-item>
+    <ion-item button [routerLink]="['/tabs/tab-eventos/tab-detalles', 'viernes', 'viernes.jpg', 'VIER. 28 JUN.', 'VIZZIO']" class="event-card">
+      <div class="event-date">VIER. 28 JUN.</div>
+      <div class="event-info">
+        <img src="../../../assets/images/viernes.jpg" alt="Event 2">
+        <div>VIZZIO</div>
+      </div>
+    </ion-item>
+  </div>
+</ion-content>

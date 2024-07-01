@@ -1,0 +1,65 @@
+ion-content {
+    --ion-background-color: #000000; /* Fondo negro */
+    color: #ff9900; /* Color de texto en naranja */
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .register-card {
+    max-width: 350px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px white; /* Sombra para efecto de elevación */
+  }
+  
+  .btn-register {
+    margin-top: 20px;
+    
+   
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900; /* Título en color naranja */
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 16px;
+    
+    ion-label {
+      color: #ff9900; /* Color de texto naranja para ion-label */
+    }
+  
+    ion-input {
+      color: #ff9900; /* Color de texto naranja para ion-input */
+      border-color: #ff9900; /* Color del borde naranja para ion-input */
+      border-width: 1px; /* Ancho del borde */
+      border-style: solid; /* Estilo del borde */
+      padding: 10px; /* Espaciado interno del input */
+      border-radius: 4px; /* Radio de borde para esquinas redondeadas */
+    }
+  }
+  
+  .label-nombre, .label-apellidos, .label-correo {
+    transition: all 0.3s ease-out;
+  }
+  
+  .ion-focused .label-nombre,
+  .ion-focused .label-apellidos,
+  .ion-focused .label-correo {
+    transform: translateY(-22px) scale(0.8);
+    color: var(--ion-color-primary); /* Color de enfoque para las etiquetas */
+  }
+.titular{
+    color: #ff9900;
+}
